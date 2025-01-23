@@ -117,3 +117,5 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 ---
 
 SUERTE! 
+
+![image](https://github.com/user-attachments/assets/2d5674de-bb61-4afe-a0ce-c4d95e982af0)
