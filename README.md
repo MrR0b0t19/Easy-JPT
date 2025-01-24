@@ -115,6 +115,14 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 3. **Documentar todo**: Anoten usuarios, contraseñas y comandos utilizados para facilitar la resolución de preguntas del examen y hagan sus diccionarios propios.
 4. **Prueben manualmente**: Aunque Metasploit es útil, es importante entender los procesos manuales detrás de los exploits.
 5. **Existe una pregunta de usuarios como contraseña de alguno y si existen**: si es por xrdp, revisen remote desktop y enumeren manualmente... primero validar que existan con net user. 
+
+## **Maquinas de HTB para practicar**
+
+HTB - armagedon
+HTB - Shield
+HTB -Devel
+HTB -Explosion
+
 ---
 
 SUERTE! 
