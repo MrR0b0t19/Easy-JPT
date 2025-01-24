@@ -118,10 +118,14 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 
 ## **Maquinas de HTB para practicar**
 
-HTB - armagedon
-HTB - Shield
-HTB -Devel
-HTB -Explosion
+HTB - armagedon-
+
+HTB - Shield-
+
+HTB -Devel-
+
+HTB -Explosion-
+
 
 ---
 
