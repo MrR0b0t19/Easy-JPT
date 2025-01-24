@@ -1,0 +1,23 @@
+##comandos de nmap
+nmap -sC -sV -O -v 192.168.100.0/24
+
+##comandos de fuerza bruta
+hydra -L users(aqui va su diccionario de usuarios) -O /usr/share/wordlists/rockyou.txt (protocolo a atacar ... smb,ftp,rdp....etc..)smb://(IP OBJETIVO)
+
+##comandos smb 
+smbclient -L (IP) ////esto enlista si comparte algo, si pide contraseña denle enter.
+
+smbclient //(IP)/(NOMBRE DE CARPETA)//// anonymous de user, anonymous de pass.
+ls - para ver contenido 
+get -obtener archivos
+put - subir archivos 
+
+
+## comandos FTP
+ftp (IP) //usuario y contraseña anonymous 
+ls - para ver contenido 
+get -obtener archivos
+put - subir archivos 
+
+## conectarse a XRDP
+xfreerdp /u:USUARIO /p:CONTRASEÑA /v:192.168.100.52
