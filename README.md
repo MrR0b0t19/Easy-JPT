@@ -120,7 +120,7 @@ hydra -L usuarios.txt -P /usr/share/wordlists/rockyou.txt smb://<IP_del_objetivo
 
 HTB - armagedon-
 
-HTB - Shield-
+HTB - Blocky-
 
 HTB -Devel-
 
